@@ -1,11 +1,11 @@
 # Blockchain Wallet Generator
 
-A Go library for generating blockchain wallets for different networks (EVM, Solana, Sui).
+A Go library for generating wallets for different networks (EVM, Solana).
 
 ## Installation
 
 ```bash
-go get github.com/0xboji/server-wallet-v2
+go get github.com/0xboji/go-wallet-address-generator
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ go get github.com/0xboji/server-wallet-v2
 package main
 
 import (
-    "server-wallet-v2/pkg/wallet"
+    "go-wallet-address-generator/pkg/wallet"
 )
 
 func main() {
@@ -32,12 +32,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
-    // Generate a Sui wallet
-    suiWallet, err := generator.CreateSui()
-    if err != nil {
-        log.Fatal(err)
-    }
 }
 ```
 
@@ -45,7 +39,6 @@ func main() {
 
 - EVM (Ethereum and compatible chains)
 - Solana
-- Sui
 
 ## Wallet Structure
 
