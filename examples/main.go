@@ -4,7 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"server-wallet-v2/pkg/wallet"
+
+	"github.com/0xboji/server-wallet-v2/pkg/wallet"
 )
 
 func main() {

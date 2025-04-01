@@ -1,4 +1,4 @@
-module server-wallet-v2
+module github.com/0xboji/go-wallet-address-generator
 
 go 1.24.1
 
